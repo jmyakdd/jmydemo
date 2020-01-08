@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body onload="">
+		<h1 align="center">Hello World</h1>
+		<h2>This is a heading</h2>
+		<p>
+			<a href="index.html">to Home</a>
+		</p>
+		<p>
+			<img src="http://file02.16sucai.com/d/file/2014/0829/b871e1addf5f8e96f3b390ece2b2da0d.jpg"/>
+		</p>
+		<label id="title">title</label><br>
+		<button id="btn_switch" onclick="onSwitch()">切换</button>
+	</body>
+	<script type="text/javascript">
+        var b = true;
+
+        function onSwitch() {
+            b = !b;
+            var str = "title";
+            if (b) {
+                str = "title";
+            } else {
+                str = "content";
+            }
+            document.getElementById('title').innerText = str
+        }
+	</script>
+</html>
